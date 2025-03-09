@@ -1,0 +1,93 @@
+input[type=text]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group
+{
+    background-color: gold;
+    padding-bottom: 100px;
+}
+
+.card
+{
+    width: auto; 
+    float:left;
+    /*border: 1px solid;*/ 
+    top: 250px;
+    margin-left: 24px;
+
+}
+
+.card-body
+{
+    background-color:aqua;
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgb(120, 120, 10);
+}
+
+.card-text
+{
+    font-size: 15px;
+}
+
+
+.card-img-top
+{
+    border: 3px solid;
+    border-color:rgb(120, 120, 10);
+    height: 500px; 
+}
+
+#img1
+{
+    position: relative;
+}
+
+#card1
+{
+    float:left;
+    position: relative;
+    /*left: 200px;*/
+}
+
+#img2
+{
+    position: relative;
+}
+
+#card2
+{
+    float:left;
+    position: relative;
+    /*left: 385px;*/
+}
+ 
+
+html 
+{
+    height: 100%;
+    margin: 0;
+}
+body
+{
+    background-repeat: no-repeat;
+    background-image: cover;
+}
+

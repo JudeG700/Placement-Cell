@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <style>
+    input[type=text]
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input[type=password]
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button
+    {
+        color:gray
+    }
+    button:hover
+    {
+        background-color: black;
+    }
+    .card-header
+    {        
+        border-style: solid;
+        background-color: rgb(202, 202, 202);
+
+    }
+    .card-body
+    {
+        background-color: rgb(202, 202, 202);
+        border-style: solid;
+
+    }
+    html 
+    {
+        height: 100%;
+        margin: 0;
+    }
+    body
+    {
+        background-image: linear-gradient(rgb(78, 255, 246), rgb(238, 194, 73));
+        background-repeat: no-repeat;
+        background-image: cover;
+    }
+    /*.input-group
+    {
+        border-style: solid;
+        border-radius: 5px;
+        border-color: black;
+    } */
+    </style>
+    <style id="custom-cursor" type="text/css"></style>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <div class="container">
+            <div class="col" style="margin-bottom: 30px; margin-top: 30px;">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-8">
+                        <div class="card card-custom">
+                            <div class="card-header" style="background-color: rgb(238, 224, 171);">
+                                <h1>Create Interview</h1>
+                            </div>
+                            <div class="card-body" style="background-color: rgb(238, 219, 145);">
+                                <form action="/<%= id %>/admin_menu/manage_students/<%= sid %>/student_profile/create_interview" method="POST">
+                                    <div class="form-group" id="dgroup">
+                                        <label for="date" style="font-size: 24px; margin-top: 40px; margin-bottom: 5px;">Company:</label><br>
+                                        <div class="input-group">
+                                        <input type="text" id="company" class="form-control" name="company" required><br>
+                                        </div>
+                                        <label for="date" style="font-size: 24px; margin-top: 40px; margin-bottom: 5px;">Date:</label><br>
+                                        <div class="input-group">
+                                        <input type="date" id="date" class="form-control" name="date" required><br>
+                                        </div>
+                                        <label for="time" style="font-size: 24px; margin-top: 40px; margin-bottom: 5px;">Time:</label><br>
+                                        <div class="input-group">
+                                        <input type="time" id="time" class="form-control" name="time" style="margin-bottom: 20px;" required><br>
+                                        </div>    
+                                        <button type="submit" value="Continue">Create interview </button>  
+                                        <!--<a href="/<%= id %>/admin_menu/list_interviews" style="background-color: rgb(238, 194, 73)"> See interviews </a> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
